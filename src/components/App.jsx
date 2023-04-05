@@ -8,7 +8,7 @@ const MovieDetails = lazy(() => import('./movie-details/MovieDetails'));
 const Cast = lazy(() => import('./cast/Cast'));
 const Reviews = lazy(() => import('./reviews/Reviews'));
 
- const App = () => {
+ export const App = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
@@ -25,4 +25,3 @@ const Reviews = lazy(() => import('./reviews/Reviews'));
     </Suspense>
   );
 };
-export default App
